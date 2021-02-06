@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Modal 3</title>
+<script src="jquery/jquery-1.12.3.min.js"></script>
+<link href="bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<script>
+	$(function () {
+		var oWin = parent.GetModalWin();
+		$("#modal3").val(oWin.$("#modal3").val());
+	})
+
+	function Ok() {
+		var oWin = parent.GetModalWin();
+		oWin.$("#modal3").val($("#modal3").val());
+		parent.HideModal();
+	}
+</script>
+</head>
+<body>
+
+<div class="container">
+	<h1>Modal3.htm</h1>
+
+	<div class="form-group">
+		<label for="modal3">Modal 3:</label>
+		<input type="text" class="form-control" id="modal3">
+	</div>
+</div>
+
+<div class="modal-footer" style="margin-top: 30px;">
+	<button type="button" class="btn btn-default" onclick='Ok()'>OK</button>
+	<button type="button" class="btn btn-default" onclick='parent.HideModal()'>Cancel</button>
+</div>
+
+
+</body>
+</html>

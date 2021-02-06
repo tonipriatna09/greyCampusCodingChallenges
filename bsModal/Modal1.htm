@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Modal 1</title>
+<script src="jquery/jquery-1.12.3.min.js"></script>
+<link href="bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<script>
+	$(function () {
+		var oWin = parent.GetModalWin();
+		$("#modal1").val(oWin.$("#modal1").val());
+		$("#modal2").val(oWin.$("#modal2").val());
+		$("#modal3").val(oWin.$("#modal3").val());
+	})
+
+	function Ok() {
+		var oWin = parent.GetModalWin();
+		oWin.$("#modal1").val($("#modal1").val());
+		oWin.$("#modal2").val($("#modal2").val());
+		oWin.$("#modal3").val($("#modal3").val());
+		parent.HideModal();
+	}
+</script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Modal1.htm</h1>
+
+	<div class="form-group">
+	  <label for="modal1">Modal 1:</label>
+	  <input type="text" class="form-control" id="modal1">
+	</div>
+
+	<div class="form-group">
+	  <label for="modal2">Modal 2:</label>
+	  <input type="text" class="form-control" id="modal2" disabled>
+	</div>
+
+
+	<div class="form-group">
+	  <label for="modal3">Modal 3:</label>
+	  <input type="text" class="form-control" id="modal3" disabled>
+	</div>
+
+ <input type="button" class="btn btn-info" value="Open Modal2.htm" onclick="parent.ShowModal('Modal2.htm',300,350,window)">
+</div>
+
+<div class="modal-footer" style="margin-top: 30px;">
+	<button type="button" class="btn btn-default" onclick='Ok()'>OK</button>
+	<button type="button" class="btn btn-default" onclick='parent.HideModal()'>Cancel</button>
+</div>
+
+
+</body>
+</html>

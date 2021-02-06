@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A360D4D9-A2D9-4691-8914-AD16D133AE96}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BsModal</RootNamespace>
+    <AssemblyName>BsModal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BsModal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BsModal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\3.3.6\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\3.3.6\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap\3.3.6\css\bootstrap.css" />
+    <Content Include="bootstrap\3.3.6\css\bootstrap.min.css" />
+    <Content Include="bootstrap\3.3.6\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\3.3.6\js\bootstrap.min.js" />
+    <Content Include="bootstrap\3.3.6\js\npm.js" />
+    <Content Include="Default.htm" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="jquery\jquery-1.12.3.min.js" />
+    <Content Include="BsModal.js" />
+    <Content Include="Modal1.htm" />
+    <Content Include="Modal2.htm" />
+    <Content Include="Modal3.htm" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bootstrap\3.3.6\css\bootstrap-theme.css.map" />
+    <None Include="bootstrap\3.3.6\css\bootstrap-theme.min.css.map" />
+    <None Include="bootstrap\3.3.6\css\bootstrap.css.map" />
+    <None Include="bootstrap\3.3.6\css\bootstrap.min.css.map" />
+    <None Include="bootstrap\3.3.6\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="bootstrap\3.3.6\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="bootstrap\3.3.6\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="bootstrap\3.3.6\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="font-awesome\fonts\FontAwesome.otf" />
+    <None Include="font-awesome\less\animated.less" />
+    <None Include="font-awesome\less\bordered-pulled.less" />
+    <None Include="font-awesome\less\core.less" />
+    <None Include="font-awesome\less\fixed-width.less" />
+    <None Include="font-awesome\less\font-awesome.less" />
+    <None Include="font-awesome\less\icons.less" />
+    <None Include="font-awesome\less\larger.less" />
+    <None Include="font-awesome\less\list.less" />
+    <None Include="font-awesome\less\mixins.less" />
+    <None Include="font-awesome\less\path.less" />
+    <None Include="font-awesome\less\rotated-flipped.less" />
+    <None Include="font-awesome\less\stacked.less" />
+    <None Include="font-awesome\less\variables.less" />
+    <None Include="font-awesome\scss\font-awesome.scss" />
+    <None Include="font-awesome\scss\_animated.scss" />
+    <None Include="font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="font-awesome\scss\_core.scss" />
+    <None Include="font-awesome\scss\_fixed-width.scss" />
+    <None Include="font-awesome\scss\_icons.scss" />
+    <None Include="font-awesome\scss\_larger.scss" />
+    <None Include="font-awesome\scss\_list.scss" />
+    <None Include="font-awesome\scss\_mixins.scss" />
+    <None Include="font-awesome\scss\_path.scss" />
+    <None Include="font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="font-awesome\scss\_stacked.scss" />
+    <None Include="font-awesome\scss\_variables.scss" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55026</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

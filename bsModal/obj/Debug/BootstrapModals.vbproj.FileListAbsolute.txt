@@ -1,0 +1,8 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BootstrapModals\BootstrapModals\bin\BootstrapModals.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BootstrapModals\BootstrapModals\bin\BootstrapModals.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BootstrapModals\BootstrapModals\bin\BootstrapModals.xml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BootstrapModals\BootstrapModals\obj\Debug\BootstrapModals.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BootstrapModals\BootstrapModals\obj\Debug\BootstrapModals.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BootstrapModals\BootstrapModals\obj\Debug\BootstrapModals.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BootstrapModals\BootstrapModals\obj\Debug\BootstrapModals.xml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BootstrapModals\BootstrapModals\obj\Debug\BootstrapModals.pdb
